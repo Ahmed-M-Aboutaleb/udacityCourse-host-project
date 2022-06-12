@@ -34,7 +34,6 @@ jobs:
                   name: Front-End Lint
                   command: |
                       npm run frontend:lint
-            # TODO: Build the frontend app
             - run:
                   name: Front-End Build
                   command: |
@@ -43,10 +42,6 @@ jobs:
                   name: API Build
                   command: |
                       npm run api:build
-            - run:
-                  name: Front-End Tests
-                  command: |
-                      npm run frontend:test
             - run:
                   name: Front-End Deploy
                   command: |
